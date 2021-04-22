@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {List} from 'antd-mobile'
-import {Link, link} from 'umi'
+import {Link} from 'umi'
 
 export default class ComponentNew extends Component {
     constructor (props) {

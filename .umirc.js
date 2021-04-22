@@ -26,8 +26,8 @@ export default {
       'umi-plugin-react',
       {
         antd: true,
-        dva: false,
-        dynamicImport: false,
+        dva: true,
+        dynamicImport: true,
         title: 'umi2',
         dll: false,
         routes: {

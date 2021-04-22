@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 
 export default class index extends Component {
 
-  static propTypes = {
-    demo: PropTypes.string
-  }
-
   static defaultProps = {
     demo: 'dddd'
   }
 
+  static propTypes = {
+    demo: PropTypes.string
+  }
 
   constructor(props){
     super(props);
@@ -19,10 +18,16 @@ export default class index extends Component {
     };
   }
 
+  handleClick = () => {
+    this.props.handleItem('item1')
+  }
+
   render() {
     return (
       <div>
-          lists-item1-{this.props.name}
+        <h1 onClick={this.handleClick}>
+          lists-item1-{this.props.demo}
+        </h1>
       </div>
     )
   }
